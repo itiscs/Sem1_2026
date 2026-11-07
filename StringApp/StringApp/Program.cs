@@ -25,12 +25,12 @@ string s = Console.ReadLine();
 //double x = 45.45;
 // Console.WriteLine(k);
 
-//int sum = 0;
-//foreach(string c1 in s.Split(' '))
-//{ 
-//    sum += int.Parse(c1);
-//}
-//Console.WriteLine(sum);
+int sum = 0;
+foreach (string c1 in s.Split(' '))
+{
+    sum += int.Parse(c1);
+}
+Console.WriteLine($"sum={sum} "); //форматированная строка 
 
 int[] arr = { 1, 2, 3, 5, 6, 7, -6, 4, 6, 34, 67 };
 
@@ -42,3 +42,5 @@ for(int i=0; i<arr.Length; i++)
 var arrs = sb.ToString();
 
 Console.WriteLine(arrs);
+
+
