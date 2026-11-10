@@ -1,9 +1,21 @@
 ﻿using System.Text;
 
-string str1 = "abc 1dEЦf", str2 = "x5yzghk4"; 
+string str1 = "Жbc 1dEЦf", str2 = "x5yzghk4"; 
 
 //string str = @"abc \1dEЦf"       // игнорируем управляющие символы
 str1 = str1 + str2;  // конкатенация строк
+
+for (int i = 0; i < str1.Length; i++)
+{
+    char ch1 = str1[i];
+    int d = (int)ch1;
+    Console.WriteLine($"код {ch1} = {d}");
+}
+
+int k = 1065;
+char ch2 = (char)k;
+Console.WriteLine($" символ {k} = {ch2} ");
+
 
 //Console.WriteLine(str1);
 
